@@ -5,7 +5,7 @@ import CardList from "./CardList";
 const Home = () => {
     const data = useLoaderData();
     return (
-        <div>
+        <div className="mb-10">
             <Banner></Banner>
             <CardList data={data}></CardList>
         </div>
