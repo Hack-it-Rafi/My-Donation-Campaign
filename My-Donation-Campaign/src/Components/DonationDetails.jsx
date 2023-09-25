@@ -6,7 +6,7 @@ const DonationDetails = () => {
     const { id } = useParams();
     console.log(id);
     const card = cards.find(card => card.id == id);
-    console.log(card);
+    // console.log(card);
     const handleDonate=()=>{
         saveDonations(parseInt(id));
     }
