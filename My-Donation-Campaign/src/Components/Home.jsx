@@ -6,8 +6,8 @@ const Home = () => {
     const data = useLoaderData();
     return (
         <div className="mb-10">
-            <Banner></Banner>
-            <CardList data={data}></CardList>
+            <Banner data={data}></Banner>
+            {/* <CardList data={data}></CardList> */}
         </div>
     );
 };

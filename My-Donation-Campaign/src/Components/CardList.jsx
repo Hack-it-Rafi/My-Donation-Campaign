@@ -1,11 +1,11 @@
 import Card from "./Card";
 
-const CardList = ({data}) => {
+const CardList = ({searchedData}) => {
     // console.log(data);
     return (
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {
-                data.map(card=><Card key={card.id} card={card}></Card>)
+                searchedData.map(card=><Card key={card.id} card={card}></Card>)
             }
         </div>
     );

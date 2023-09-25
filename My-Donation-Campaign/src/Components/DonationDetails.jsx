@@ -1,13 +1,23 @@
 import { useLoaderData, useParams } from "react-router-dom";
-import { saveDonations } from "./LocalStorage";
-
+import { getStoredDonations, saveDonations } from "./LocalStorage";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const DonationDetails = () => {
     const cards = useLoaderData();
     const { id } = useParams();
     console.log(id);
     const card = cards.find(card => card.id == id);
     // console.log(card);
-    const handleDonate=()=>{
+    const handleDonate = () => {
+        
+        const storedDonations = getStoredDonations();
+        const exist = storedDonations.find(donationId => donationId == id);
+        if (!exist) {
+            toast("Donation Done!"); 
+        }
+        else{
+            toast("You Already Donated here!")
+        }
         saveDonations(parseInt(id));
     }
     return (
@@ -20,6 +30,7 @@ const DonationDetails = () => {
                     </div>
                 </div>
             </div>
+            <ToastContainer />
             <div className="mt-10">
                 <h2 className="text-4xl font-bold">{card.title}</h2>
                 <p className="my-7 mb-20 text-slate-700">{card.description}</p>

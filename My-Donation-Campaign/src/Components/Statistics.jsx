@@ -47,7 +47,7 @@ const Statistics = () => {
                         ))}
                     </Pie>
                 </PieChart>
-                <div className='flex w-full justify-center gap-6'>
+                <div className='flex w-full justify-center gap-8'>
                     <div className='flex items-center gap-2'>
                         <p>Your Donation </p>
                         <div className='h-2 w-20 bg-[#0088FE]'>
@@ -55,7 +55,7 @@ const Statistics = () => {
                         </div>
                     </div>
                     <div className='flex items-center gap-2'>
-                        <p>Others Donation </p>
+                        <p>Total Donation </p>
                         <div className='h-2 w-20 bg-[#00C49F]'>
 
                         </div>
