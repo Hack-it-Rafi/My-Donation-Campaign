@@ -51,7 +51,7 @@ const Banner = ({ data }) => {
                                 <input
                                     className="py-3 px-2 rounded-e-lg bg-[#FF444A] border-[2px]"
                                     type="submit"
-                                    value="Submit"
+                                    value="Search"
                                 />
                             </form>
                         </div>
