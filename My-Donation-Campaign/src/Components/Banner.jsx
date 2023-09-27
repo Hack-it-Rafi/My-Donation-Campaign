@@ -16,7 +16,7 @@ const Banner = ({ data }) => {
     };
 
     const bannerStyle = {
-        backgroundImage: 'url(../../public/bg.jpeg)',
+        backgroundImage: 'url(/public/bg.jpeg)',
         backgroundSize: 'cover',
         backgroundPosition: 'center center',
         position: 'relative',
