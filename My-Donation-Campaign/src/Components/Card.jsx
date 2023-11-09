@@ -7,11 +7,11 @@ const Card = ({ card }) => {
         navigate(`/${id}`)
     }
     return (
-        <div onClick={handleDonationDetails} className="rounded-lg">
-            <div className="rounded-lg bg-base-100 shadow-xl">
+        <div onClick={handleDonationDetails} className="rounded-lg min-h-full">
+            <div className="rounded-lg bg-base-100 shadow-xl min-h-full" style={{ backgroundColor: `${bg_color}` }}>
                 <figure><img className="w-full" src={image} alt="Shoes" /></figure>
-                <div className='card-body text-left rounded-b-lg' style={{ backgroundColor: `${bg_color}` }}>
-                    <div className="py-2 px-4 w-24 text-center rounded-lg" style={{ backgroundColor: `${category_bg}` }}>
+                <div className='card-body text-left rounded-b-lg ' >
+                    <div className="py-2 px-4 w-24 text-center rounded-lg " style={{ backgroundColor: `${category_bg}` }}>
                         <span style={{color: `${text_color}`}}>
                             {button_text}
                         </span>
